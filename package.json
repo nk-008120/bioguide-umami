@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "dev": "dotenv next dev --turbo",
-    "build": "npm-run-all check-env build-db check-db build-tracker build-recorder build-geo build-app",
+    "build": "npm-run-all check-env build-db-client build-prisma-client check-db check-tracker build-tracker-script build-tracker-types build-recorder build-geo build-app",
     "start": "next start",
     "build-docker": "npm-run-all build-db build-tracker build-recorder build-geo build-app",
     "start-docker": "npm-run-all check-db update-tracker start-server",
